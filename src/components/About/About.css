@@ -1,0 +1,245 @@
+#About{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 120px;
+    padding: 0 15%;
+    margin-top: 3%;
+    
+}
+#About h1{
+    font-size: 2rem;
+    color: #1A1C22;
+    font-weight: 800;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;    
+}
+
+#About .container-me{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#About .container-me img{
+    height: 330px;
+}
+#About .me{
+    width: 40%;
+}
+#About .me p{
+    color: #757782;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+
+
+
+
+#About .container-skills{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;     
+}
+#About .container-skills img{
+    height: 330px;
+}
+#About .my-skills{
+    width: 50%;
+}
+
+
+
+
+
+#About .container-skills .skill{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+#About .container-skills .card{
+   width: 80px;
+   height: 80px;
+   background-color: #fff;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   font-size: 2.3rem;
+   cursor: pointer;
+   transition: 0.4s ease-in-out;
+   border-radius: 5px;
+   box-shadow: 0px 0px 20px rgba(0,0,0,0.1);
+}
+
+
+#About .container-skills .card:nth-of-type(1){
+    color: #E44D26;
+}
+
+#About .container-skills .card:nth-of-type(1):hover {
+    background-color: #E44D26;
+}
+#About .container-skills .card:nth-of-type(1) p{
+    color: #E44D26;
+}
+
+#About .container-skills .card:nth-of-type(2){
+    color: #1073B8;
+}
+#About .container-skills .card:nth-of-type(2):hover {
+    background-color: #1073B8;
+}
+#About .container-skills .card:nth-of-type(2) p{
+    color: #1073B8;
+}
+
+#About .container-skills .card:nth-of-type(3){
+    color: #FECB28;
+}
+#About .container-skills .card:nth-of-type(3):hover {
+    background-color: #FECB28;
+}
+#About .container-skills .card:nth-of-type(3) p{
+    color: #FECB28;
+}
+
+#About .container-skills .card:nth-of-type(4){
+    color: #53C1DE;
+}
+#About .container-skills .card:nth-of-type(4):hover {
+    background-color: #53C1DE;
+}
+#About .container-skills .card:nth-of-type(4) p{
+    color: #53C1DE;
+}
+
+#About .container-skills .card:nth-of-type(5){
+    color: #010000;
+}
+#About .container-skills .card:nth-of-type(5):hover {
+    background-color: #010000;
+}
+#About .container-skills .card:nth-of-type(5) p{
+    color: #010000;
+}
+#About .container-skills .card:hover{
+    color: #fff;
+}
+
+#About .container-skills .card p{
+    position: absolute;
+    font-size: 1rem;
+    opacity: 0;
+    font-weight: 500;
+    transform: translateY(0px) scale(0.1);
+    transition: 0.4s ease-in-out;
+}
+
+#About .container-skills .card:hover p{
+    opacity: 1;
+    transform: translateY(52px) scale(1);
+}
+
+
+/* dark theme */
+
+.dark #About h1{
+    color: #f5f5fa;
+}
+.dark #About .me p{
+    color: #cdcdcd;
+}
+
+.dark #About .container-skills .card{
+    background-color: #1A1C22; 
+    ;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+ }
+
+
+
+
+
+
+
+
+@media all and (max-width: 1455px) {
+    #About{
+        padding: 0 5%;
+    }
+    #About .me p{
+        font-size: 1.1rem;
+    }
+}
+
+@media all and (max-width: 960px) {
+    #About{
+        padding: 5vh 2%;
+        height: fit-content;
+    }
+    #About .container-me img{
+        height: 200px;
+    }
+    #About .container-skills img{
+        height: 200px;
+    }
+}
+
+
+
+@media all and (max-width: 768px) {
+    #About{
+        padding: 5vh 10%;
+    }
+    #About h1{
+        font-size: 1.6rem;
+        display: flex;
+        justify-content: center;
+    }
+    #About .container-me{
+        margin-top: 18px;
+        flex-direction: column;
+        gap: 50px;
+    }
+    #About .me{
+        width: 100%;
+    }
+    #About .me p{       
+        width: 100%;
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    #About .container-skills .card p{
+        font-size: 0.9rem;
+    }
+    
+
+
+    #About .container-skills{
+        margin-top: 15px;
+        flex-direction: column-reverse;
+        gap: 50px; 
+    }
+    #About .container-skills img{
+        margin-right: 40px;
+    }
+    #About .my-skills{
+        width: 100%;
+        justify-content: center;
+    }
+    #About .container-skills .card{
+       width: 70px;
+       height: 70px;
+       font-size: 2.4rem;
+    }
+    #About .container-skills .card:hover p{
+        transform: translateY(47px) scale(1);
+    }
+}

@@ -1,0 +1,143 @@
+#Projects{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20vh;
+    
+}
+#Projects h1{
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1A1C22;
+    margin-bottom: 2rem;
+}   
+#Projects .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    width: 90%;
+}
+#Projects .container .card{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color: #fff;
+    width: 400px;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    transition: all 0.5s ease-in-out;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+}
+#Projects .container .card:hover{
+    box-shadow: 0 0 25px rgba(0,0,0, 0.2);
+}
+#Projects .container .card img{
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.7rem;
+}
+#Projects .container .card h3{
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #1A1C22;
+}
+#Projects .container .card p{
+    width: 100%;
+    text-align: center;
+    font-weight: 400;
+    color: #757782;
+    font-size: 1rem;
+}
+
+#Projects .container .card .links{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+#Projects .container .card .links .btn-git{
+    color: #fff;
+    padding: 6px 12px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    background-color: #2F2E41;
+    transition: 0.5s ease-in-out;
+    border: 1.8px solid #2F2E41;
+}
+#Projects .container .card .links .btn-git:hover{
+    color: #2F2E41;
+    background-color: transparent;
+}
+
+#Projects .container .card .links .btn-live{
+    color: #fff;
+    padding: 6px 12px;
+    letter-spacing: 0.5px;
+    border-radius: 5px;
+    background-color: #0E91E6; 
+    transition: 0.5s ease-in-out;
+    border: 1.8px solid #0E91E6;
+}
+#Projects .container .card .links .btn-live:hover{
+    color: #0E91E6;
+    background-color: transparent;
+}
+
+
+
+
+/* dark theme */
+
+.dark #Projects h1{
+    color: #f5f5fa;
+}
+.dark #Projects .container .card{
+    background-color: #1A1C22;
+    box-shadow: 0 0 15px rgba(0,0,0, 0.5);
+}
+.dark #Projects .container .card:hover{
+    box-shadow: 0 0 30px rgba(0,0,0, 0.7);
+}
+.dark #Projects .container .card h3{
+    color: #f5f5fa;
+}
+.dark #Projects .container .card p{
+    color: #cdcdcd;
+}
+.dark #Projects .container .card .links .btn-git{
+    border: 1.8px solid #2F2E41;
+}
+.dark #Projects .container .card .links .btn-git:hover{
+    color: #f5f5fa;
+}
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1455px) {
+    #Projects{
+        height: fit-content;
+        padding-top: 5vh;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #Projects h1{
+        font-size: 1.6rem;
+    }
+}

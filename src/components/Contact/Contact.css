@@ -1,0 +1,206 @@
+#Contact{
+    position: relative;
+    display: flex;
+    height: fit-content;
+    margin: 100px;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+#Contact .container{
+    padding: 30px 50px;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    border-radius: 40px;
+    background-color: #fff;
+}
+#Contact h1{
+    margin-bottom: 15px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 800;
+    color: #1A1C22;
+}
+
+
+
+
+
+
+
+
+
+
+#Contact form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#Contact form .name,.surname,.email,.message{
+    transition: 0.5s;
+    border-radius: 8px;
+    padding: 12px;
+    font-size: 1.1rem; 
+    background-color: rgb(249, 249, 251);
+    border: 2px solid rgba(0,0,0,0.02);
+    color: #1A1C22;                                                                                                                                                                                                                                         ;
+}
+#Contact form .name:hover,.surname:hover,.email:hover,.message:hover{
+    background-color: #fff;
+    border: 2px solid rgba(0,0,0,0.1);                                                                                                                                                                                                                                        ;
+}
+#Contact form .name:focus,.surname:focus,.email:focus,.message:focus{
+    border: 2px solid rgba(14, 144, 230,0.8);
+    background-color: #fff;                                                                                                                                                                                                                                         ;
+}
+
+
+#Contact form .name,.surname{
+    width: 670px;
+}
+#Contact form .email,.message{
+    width: 670px;
+}
+
+#Contact form .message{
+    resize: none;
+}
+
+#Contact .submit-container{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 5px;
+}
+#Contact form .btn-submit{
+    background-color: #0e91e6;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    padding: 12px 24px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.7s ease-in-out;
+}
+#Contact form .btn-submit:hover{
+    box-shadow: 0 0 14px #0e91e6;
+}
+#Contact #confirmation{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+
+
+
+
+/* dark theme */
+
+.dark #Contact .container{
+    box-shadow: 0 0 30px rgba(0,0,0,0.1);
+    background-color: #1A1C22;
+}
+.dark #Contact h1{
+    color: #f5f5fa;
+}
+
+.dark #Contact form .name,.dark #Contact form .surname,.dark #Contact form .email,.dark #Contact form .message{
+    background-color: #202227;
+    border: 2px solid rgba(0,0,0,0.02);
+    color: #cdcdcd;                                                                                                                                                                                                                                   ;
+}
+.dark #Contact form .name:hover,.dark #Contact form .surname:hover,.dark #Contact form .email:hover,.dark #Contact form .message:hover{
+    background-color: #1A1C22;
+    border: 2px solid rgba(249,249,249,0.1);                                                                                                                                                                                                                                        ;
+}
+.dark #Contact form .name:focus,.dark #Contact form .surname:focus,.dark #Contact form .email:focus,.dark #Contact form .message:focus{
+    border: 2px solid rgba(14, 144, 230,0.8);
+    background-color: #1A1C22;                                                                                                                                                                                                                                         ;
+}
+
+.dark #Contact form .btn-submit{
+    color: #f5f5fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1455px) {
+    #Contact{
+        margin: 100px 5%;
+        gap: 50px;
+    }
+    #Contact .container{
+        width: 60%;
+        padding: 20px 30px;
+    }
+    #Contact form{           
+        width: 100%                                                                                                                                                                                                               ;
+    }
+    #Contact form .name,.surname{
+        width: 100%;
+    }
+    #Contact form .email,.message{
+        width: 100%;
+    }   
+    #Contact img{
+        width: 35%;
+    }
+}
+
+@media all and (max-width: 768px) {
+    #Contact{
+        margin: 100px 5%;
+    }
+    #Contact .container{
+        width: 100%;
+        position: relative;
+        padding: 15px 25px;
+        box-shadow: 0 0 30px rgba(0,0,0,0.1);
+        border-radius: 20px;
+    }
+    #Contact h1{
+        font-size: 1.6rem;
+    }
+    #Contact form{           
+        width: 100%                                                                                                                                                                                                               ;
+    }
+    #Contact form .name,.surname,.email,.message{
+        border-radius: 8px;
+        padding: 12px;
+        font-size: 1rem;                                                                                                                                                                                                                             ;
+    }
+    #Contact form .name,.surname{
+        width: 100%;
+    }
+    #Contact form .email,.message{
+        width: 100%;
+    }
+    #Contact img{
+        display: none;
+    }
+    #Contact form .btn-submit{
+        font-size: 0.9rem;
+        border-radius: 8px;
+        padding: 10px 14px;
+        cursor: pointer;
+    }
+    #Contact #confirmation{
+        font-size: 0.8rem;
+    }
+}

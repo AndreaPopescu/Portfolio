@@ -1,0 +1,198 @@
+#Home{
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-image: url('../../assets/bg-top.png');
+    background-repeat: no-repeat;
+    background-size: contain;       
+}
+#Home .bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: url('../../assets/bg-bot.png');
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-position-x: right;
+}
+#Home .container-text{
+    position: relative; 
+    padding-top: 25vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px;
+}
+#Home .container-text h1{
+    font-size: 5rem;
+    font-weight: 800;
+    color: #1A1C22;
+    line-height: 85px;
+    letter-spacing: 2px;
+    text-align: center;
+    transition: all 0.75s ease-in-out;
+}
+#Home .container-text h1 span{
+    color: #0E91E6;
+    text-shadow: 0 0 60px rgba(14, 145, 230, 0.5);
+    
+}   
+#Home .container-text p{
+    color: #757782;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-top: -5px;
+    transition: all 0.75s ease-in-out;
+}
+#Home .container-text a{
+    background-color: #0E91E6;
+    color: #fff;
+    width: fit-content;
+    font-size: 1.2rem;
+    border-radius: 14px;
+    padding: 16px 32px;
+    font-weight: 500;
+    box-shadow: 0 8px 20px rgba(14, 145, 230, 0.6);
+    transition: all 0.5s ease-in-out;
+}
+#Home .container-text a:hover{
+    transform: translateY(8px);
+    box-shadow: 0 0 25px rgba(14, 145, 230, 0.6);
+}
+
+
+
+/* Dark Theme */
+
+.dark #Home .container-text h1{
+    color: #f5f5fa;
+} 
+.dark #Home .container-text p{
+    color: #cdcdcd;
+}
+.dark #Home .container-text a{
+    color: #f5f5fa;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 960px) {
+    #Home{
+        background-size: 140%;
+    }
+    #Home .bg{
+        background-size: 140%;
+        background-position: bottom;
+        background-position-x: right;
+    }
+    #Home .container-text{
+        gap: 20px;
+        padding-top: 30vh;
+        width: 90%;
+    }
+    #Home .container-text h1{
+        font-size: 4rem;
+        line-height: 70px;
+        letter-spacing: 1px;
+    }
+    #Home .container-text p{
+        text-align: center;
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    
+}
+
+
+
+
+
+
+@media all and (max-width: 768px) {
+    #Home{
+        background-size: 190%;
+    }
+    #Home .bg{
+        background-size: 190%;
+        background-position: bottom;
+        background-position-x: right;
+    }
+    #Home .container-text{
+        gap: 20px;
+        padding-top: 30vh;
+        width: 90%;
+    }
+    #Home .container-text h1{
+        font-size: 3.3rem;
+        line-height: 50px;
+        letter-spacing: 1px;
+    }
+    #Home .container-text p{
+        font-size: 1.1rem;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+} 
+
+@media all and (max-width: 480px) {
+    #Home{
+        background-size: 250%;
+
+    }
+    #Home .bg{
+        background-size: 250%;
+        background-position: bottom;
+        background-position-x: right;
+    }
+    #Home .container-text{
+        gap: 22px;
+        padding-top: 30vh;
+        width: 90%;
+    }
+    #Home .container-text h1{
+        font-size: 2.6rem;
+        line-height: 40px;
+        letter-spacing: 1px;
+    }
+    #Home .container-text p{
+        font-size: 1rem;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
+    #Home .container-text a{
+        width: fit-content;
+        font-size: 1rem;
+        padding: 14px 28px;
+    }
+}
+
+
