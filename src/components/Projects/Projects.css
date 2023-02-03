@@ -1,6 +1,6 @@
 #Projects{
     position: relative;
-    height: 80vh;
+    height: 65vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -62,7 +62,7 @@
     justify-content: center;
     gap: 20px;
     align-items: center;
-    margin-top: 6px;
+    margin-top: 8px;
     margin-bottom: 6px;
 }
 #Projects .container .card .links .btn-git{

@@ -1,32 +1,14 @@
 import './Projects.css';
-import project1 from '../../assets/img.png';
+import rockPaperScissor from '../../assets/rock-paper-scissor.jpg';
 function Projects() {
   return (
     <section id='Projects'>
       <h1>Projects</h1>
       <div className='container'>
         <div className='card'>
-          <img src={project1} alt=''/>
-          <h3>Crypto tracking price</h3>
-          <p>lorem ipsum</p>
-          <div className='links'>
-          <a href='/' className='btn-git'>View Code</a>
-          <a href='/' className='btn-live'>Live Demo</a>
-          </div>
-        </div>
-        <div className='card'>
-          <img src={project1} alt=''/>
-          <h3>Title</h3>
-          <p>lorem ipsum</p>
-          <div className='links'>
-          <a href='/' className='btn-git'>View Code</a>
-          <a href='/' className='btn-live'>Live Demo</a>
-          </div>
-        </div>
-        <div className='card'>
-          <img src={project1} alt=''/>
-          <h3>Title</h3>
-          <p>lorem ipsum</p>
+          <img src={rockPaperScissor} alt=''/>
+          <h3>Rock Paper Scissor Game</h3>
+          {/* <p>lorem ipsum</p> */}
           <div className='links'>
           <a href='/' className='btn-git'>View Code</a>
           <a href='/' className='btn-live'>Live Demo</a>
