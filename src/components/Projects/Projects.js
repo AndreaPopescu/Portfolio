@@ -7,7 +7,7 @@ function Projects() {
       <div className='container'>
         <div className='card'>
           <img src={rockPaperScissor} alt=''/>
-          <h3>Rock Paper Scissor Game</h3>
+          <h3>WealthyMove</h3>
           {/* <p>lorem ipsum</p> */}
           <div className='links'>
           <a href='/' className='btn-git'>View Code</a>
