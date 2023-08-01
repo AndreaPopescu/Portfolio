@@ -1,6 +1,6 @@
 import './About.css';
-import {FaHtml5, FaCss3Alt, FaReact, FaGit} from 'react-icons/fa'
-import {SiJavascript} from 'react-icons/si'
+import {FaHtml5, FaCss3Alt, FaReact, FaGit, FaNode} from 'react-icons/fa'
+import {SiJavascript, SiMysql, SiNextdotjs} from 'react-icons/si'
 import about from '../../assets/about-img.png';
 import skills from '../../assets/skills-img.png';
 
@@ -36,6 +36,18 @@ function About() {
               <div className='card'>
                 <FaReact/>
                 <p>React.js</p>
+              </div>
+              <div className='card'>
+                <SiNextdotjs/>
+                <p>Next.js</p>
+              </div>
+              <div className='card'>
+                <FaNode/>
+                <p>Node.js</p>
+              </div>
+              <div className='card'>
+                <SiMysql/>
+                <p>Mysql</p>
               </div>
               <div className='card'>
                 <FaGit/>

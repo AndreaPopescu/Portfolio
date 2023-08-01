@@ -25,7 +25,7 @@ function Footer() {
           </ul>
         </div>
       <div className='line'></div>
-      <p>Copyright © 2022. Made by Andrea Popescu</p>
+      <p>Copyright © 2023. Made by Andrea Popescu</p>
     </div>
   );
 }

@@ -57,10 +57,10 @@
 
 
 #About .container-skills .skill{
-    margin-top: 20px;
+    margin-top: 25px;
     display: flex;
     justify-content: center;
-    gap: 25px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 #About .container-skills .card{
@@ -121,12 +121,42 @@
 }
 
 #About .container-skills .card:nth-of-type(5){
-    color: #010000;
+    color: #000000;
 }
 #About .container-skills .card:nth-of-type(5):hover {
-    background-color: #010000;
+    background-color: #000000;
 }
 #About .container-skills .card:nth-of-type(5) p{
+    color: #000000;
+}
+
+#About .container-skills .card:nth-of-type(6){
+    color: #80BD01;
+}
+#About .container-skills .card:nth-of-type(6):hover {
+    background-color: #80BD01;
+}
+#About .container-skills .card:nth-of-type(6) p{
+    color: #80BD01;
+}
+
+#About .container-skills .card:nth-of-type(7){
+    color: #086690;
+}
+#About .container-skills .card:nth-of-type(7):hover {
+    background-color: #086690;
+}
+#About .container-skills .card:nth-of-type(7) p{
+    color: #086690;
+}
+
+#About .container-skills .card:nth-of-type(8){
+    color: #010000;
+}
+#About .container-skills .card:nth-of-type(8):hover {
+    background-color: #010000;
+}
+#About .container-skills .card:nth-of-type(8) p{
     color: #010000;
 }
 #About .container-skills .card:hover{
@@ -144,7 +174,7 @@
 
 #About .container-skills .card:hover p{
     opacity: 1;
-    transform: translateY(52px) scale(1);
+    transform: translateY(54px) scale(1);
 }
 
 
@@ -233,6 +263,9 @@
     #About .my-skills{
         width: 100%;
         justify-content: center;
+    }
+    #About .container-skills .skill{
+        gap: 25px;
     }
     #About .container-skills .card{
        width: 70px;
