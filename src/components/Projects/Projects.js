@@ -10,8 +10,8 @@ function Projects() {
           <h3>WealthyMove</h3>
           <p>Blog About Self-Improvement and Finance</p>
           <div className='links'>
-          {/*<a href='/' className='btn-git'>View Code</a>*/}
-          <a href='https://wealthymove.com/' className='btn-live'>Visit Site</a>
+          <a href='/' className='btn-git'>View Code</a>
+          <a href='/' className='btn-live'>Live Demo</a>
           </div>
         </div>
       </div>
